@@ -1,0 +1,68 @@
+# Gmail Contact Categorizer - Development Guidelines
+
+## Expertise and Focus
+You are an expert in Python, Gmail API integration, data analysis, and AI/ML techniques for contact categorization.
+
+## Code Style and Structure
+- **Write Clean, Readable Code**: Ensure your code is well-documented with docstrings and comments where necessary. Follow PEP 8 guidelines.
+- **Use Object-Oriented Design**: Prefer class-based implementations with clear separation of concerns.
+- **Module Modularity**: Break down functionality into smaller, reusable modules. Each module should have a single responsibility.
+- **Organize Files by Function**: Group related modules based on their functional roles (authentication, data processing, analysis, export).
+
+## Naming Conventions
+- **Variables and Functions**: Use snake_case for variables and functions (e.g., `email_count`, `process_message`).
+- **Classes**: Use PascalCase for class names (e.g., `GmailClient`, `ContactAnalyzer`).
+- **Modules**: Use lowercase and underscores for module names (e.g., `gmail_client.py`, `contact_analyzer.py`).
+- **Constants**: Use UPPERCASE with underscores for constants (e.g., `MAX_EMAILS`, `DEFAULT_SCOPES`).
+
+## Python Usage
+- **Type Hinting**: Use type hints for function parameters and return values to improve code readability and IDE support.
+- **Context Managers**: Use context managers (`with` statements) for resource management when appropriate.
+- **List Comprehensions**: Use list comprehensions for concise and readable code when transforming lists.
+- **Error Handling**: Implement proper exception handling with specific exception types.
+
+## Performance Optimization
+- **Batch Processing**: Process emails in batches to conserve memory when dealing with large mailboxes.
+- **Caching**: Implement caching mechanisms for API responses to reduce redundant calls.
+- **Progress Indicators**: Use progress bars (tqdm) for long-running operations to provide user feedback.
+- **Lazy Loading**: Load data only when needed, especially for large datasets.
+
+## API and Data Handling
+- **Respect API Limits**: Implement rate limiting and pagination for Gmail API requests to avoid quota issues.
+- **Data Privacy**: Only process the minimum required email data and avoid storing sensitive information.
+- **Error Resilience**: Build robust error handling for API interactions to gracefully recover from failures.
+- **Data Validation**: Validate input data and handle edge cases (empty emails, malformed headers, etc.).
+
+## AI/ML Best Practices
+- **Feature Engineering**: Create meaningful features that capture the essence of contact relationships.
+- **Model Interpretability**: Ensure the classification approach is explainable and results are understandable.
+- **Evaluation Metrics**: Consider appropriate metrics for evaluating categorization quality.
+- **Parameter Tuning**: Allow customization of key algorithm parameters for better results.
+
+## Output and Visualization
+- **Consistent Formatting**: Maintain consistent formatting across different export formats.
+- **Color Coding**: Use appropriate color schemes for different contact categories.
+- **Data Presentation**: Present results in a clean, professional format that's easy to interpret.
+- **Export Options**: Support multiple export formats to accommodate different user preferences.
+
+## User Experience
+- **Clear Documentation**: Provide comprehensive and accessible documentation for setup and usage.
+- **Command-Line Interface**: Design an intuitive CLI with sensible defaults and helpful error messages.
+- **Progress Feedback**: Keep users informed about long-running processes with appropriate progress indicators.
+- **Graceful Failures**: Handle errors gracefully with user-friendly messages and recovery options.
+
+## Dependencies
+- **Minimal Dependencies**: Only include essential external libraries to reduce installation complexity.
+- **Version Pinning**: Specify compatible version ranges in requirements to ensure stability.
+- **Standard Library**: Prefer Python standard library solutions where appropriate to minimize dependencies.
+
+## Security
+- **OAuth Best Practices**: Follow Google's OAuth best practices for secure authentication.
+- **Token Storage**: Store authentication tokens securely and handle refreshing appropriately.
+- **Credential Management**: Provide clear guidance on credential management while avoiding hardcoded secrets.
+
+## Testing and Quality
+- **Unit Tests**: Write unit tests for core functionality to ensure code reliability.
+- **Edge Cases**: Test edge cases such as empty mailboxes, rate limiting, and token expiration.
+- **Mock API Responses**: Use mocks for testing to avoid actual API calls during testing.
+- **Code Quality**: Run linters (flake8, pylint) to maintain code quality and consistency.

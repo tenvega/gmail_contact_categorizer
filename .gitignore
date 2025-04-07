@@ -1,0 +1,69 @@
+# Credentials and tokens
+credentials.json
+token.pickle
+*.pem
+*.key
+*.crt
+*.env
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# OS specific
+.DS_Store
+Thumbs.db
+.directory
+desktop.ini
+
+# Output files
+*.xlsx
+*.csv
+*.log
+logs/
+*.bak
+*.tmp
+*~
+
+# Google API specific
+client_secrets.json
+client_config.json
+token.json
+
+# Documentation
+*.pdf
+docs/*.pdf 
