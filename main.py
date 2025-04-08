@@ -93,9 +93,10 @@ def main():
         print(f"{category.replace('_', ' ').title()}: {len(contacts)} contacts")
     
     if args.export_type == 'sheets':
-        print(f"\nResults available at: https://docs.google.com/spreadsheets/d/{result}")
+        print(f"\nResults available at: {result}")
     else:
         print(f"\nResults saved to: {result}")
+
 
 
 if __name__ == "__main__":
